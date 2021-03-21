@@ -1,0 +1,105 @@
+body {
+  background: url(../../Images/Background.JPG) fixed center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 1rem;
+
+  width: 100%;
+  
+  font-size: 4rem;
+  text-align: center;
+  color: #FFF;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 1.5rem;
+
+  width: 100%;
+  
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #FFF;
+}
+
+h3 {
+  color: #FFF;
+  font-weight: 400;
+  width: 100%;
+}
+
+.color {
+  width: 100%;
+  
+  color: #F5F3F4;
+  line-height: 3rem;
+  text-align: justify;
+  font-size: 2.5rem;
+}
+
+.content {
+  width: 70%;
+  margin: auto;
+  margin-top: 11rem;
+  padding-bottom: 1rem;
+}
+
+#anouncement {
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.box {
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+.box:first-child {
+  border-right: solid 3px #FFF;
+  margin-right: -1rem;
+}
+
+.box.italic {
+  display: flex;
+  justify-content: flex-end;
+  font-style: italic;
+  text-shadow: 2px 1px #000000;
+}
+
+.box.italic h3 {
+  justify-content: flex-end;
+}
+
+#anouncement h3 {
+  display: 	flex;
+}
+
+@media(max-width: 720px){
+  #anouncement {
+    margin-top: 4rem;
+    display: block;
+  }
+
+  #anouncement h3 {
+    font-size: 1.5rem;
+    display: block;
+  }
+
+  .box {
+    display: block;
+    width: 100%;
+  }
+
+  .box:first-child {
+    border: none;
+    border-bottom: solid 3px #FFF;
+  }
+}

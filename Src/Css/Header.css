@@ -1,0 +1,111 @@
+header {
+  display: flex;
+  align-items: center;
+
+  height: 5rem;
+  width: 100%;
+
+  position: relative;
+
+  background-color: #003049;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 80%;
+  margin: auto;
+}
+
+header .menu a {
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: #FFF;
+
+  opacity: 90%;
+
+  padding: .5rem 1rem;
+  border-radius: 15px;
+}
+
+header .menu a:hover {
+  opacity: 1;
+}
+
+header nav {
+  height: 100%;
+  width: 80%;
+
+  margin: auto;
+}
+
+header nav img {
+  height: 5rem;
+} 
+
+header .image-instagram {
+  position: absolute;
+  top: 50%;
+  right: .7rem;
+  transform: translateY(-50%);
+
+  height: 3rem;
+}
+
+.selected a {
+  background-color: #D62828;
+  transition: .5s;
+
+}
+
+.selected a:hover {
+  background-color: #e21818;
+  transition: .5s;
+}
+
+.menu-interface  {
+  height: 2.5rem;
+  margin-left: 1rem;
+  display: none;
+}
+
+.logo-hidden {
+  display: none;
+
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+
+  height: 5rem;
+}
+
+@media(max-width: 900px) {
+  header nav {
+    width: 100%;
+  }
+}
+
+@media(max-width: 500px) {
+  .image-instagram {
+    height: 2.5rem;
+  }
+
+  nav {
+    display: none;
+  }
+  
+  nav img {
+    display: inline;
+  }
+
+  .menu-interface {
+    display: inline;
+  }
+
+  .logo-hidden {
+    display: inline;
+  }
+
+}
