@@ -47,6 +47,7 @@ header .menu a:hover {
 }
 
 header nav {
+  position: relative;
   height: 100%;
   width: 80%;
 
@@ -69,12 +70,10 @@ header nav img {
 .selected a {
   border: #e4d6d6 solid 2px;
   transition: background-color .5s;
-
 }
 
 .selected a:hover {
-  background-color: #000000;
-  transition: background-color .5s;
+  opacity: 1;
 }
 
 .menu-interface-div {
@@ -83,9 +82,10 @@ header nav img {
   justify-content: center;
 
   margin-left: 1rem;
+
   height: 3rem;
   width: 3rem;
-  background-color: rgb(82, 79, 79);
+
   border-radius: 50%;
   display: none;
 }
@@ -106,6 +106,15 @@ header nav img {
   height: 5rem;
 }
 
+.menu span {
+  display: none;
+  font-size: 3rem;
+  position: absolute;
+  top: 1%;
+  right: 1rem;
+  color: #929292;
+}
+
 @media(max-width: 900px) {
   header nav {
     width: 100%;
@@ -113,6 +122,16 @@ header nav img {
 }
 
 @media(max-width: 500px) {
+  .menu span {
+    display: inline;
+
+
+  }
+
+  .selected a:hover {
+    background-color: #ffffff00;
+  }
+
   .image-instagram {
     height: 2.5rem;
   }
@@ -120,7 +139,7 @@ header nav img {
   nav {
     display: none;
   }
-  
+
   nav img {
     display: inline;
   }
@@ -133,4 +152,22 @@ header nav img {
     display: inline;
   }
 
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #ffffff;
+    left: 0;
+    width: 50%;
+  }
+
+  nav ul li:nth-child(3) {
+    display: none;
+  }
+
+  nav .menu a {
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
 }
