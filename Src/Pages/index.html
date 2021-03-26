@@ -4,14 +4,16 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scaleable=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../Css/Global.css">
+    <link rel="stylesheet" href="../Css/Header.css">
     <link rel="stylesheet" href="../Css/Index.css">
     <link rel="stylesheet" href="../Css/AboutUs.css">
-    <link rel="stylesheet" href="../Css/Header.css">
+    <link rel="stylesheet" href="../Css/Patron.css">
+    
     <link rel="shortcut icon" href="../../Images/flamelogo trans.png" type="image/x-icon">
 
     <title>Flame Sports</title>
@@ -25,37 +27,37 @@
           <img src="../../Images/menu.svg" alt="Símbolo de interface de lista" class="menu-interface">
         </div>
   
-        <a href="Index.html" class="logo-hidden"><img src="../../Images/flamelogo trans.png" alt="Flame Sports"></a>
+        <a href="#home" class="logo-hidden"><img src="../../Images/flamelogo trans.png" alt="Flame Sports"></a>
   
         <nav>
           <ul>
   
-            <li class="menu selected">
-              <a href="Index.html">INÍCIO</a>
+            <li class="menu menu-home">
+              <a href="#home">INÍCIO</a>
             </li>
   
-            <li class="menu">
-              <a href="AboutUs.html">SOBRE NÓS</a>
+            <li class="menu menu-about-us">
+              <a href="#about-us">SOBRE NÓS</a>
             </li>
   
             <li>
-              <a href="Index.html">
+              <a href="#home">
                 <img src="../../Images/flamelogo trans.png" alt="Flame Sports">
               </a>
             </li>
   
-            <li class="menu">
-              <a href="Pagina.html">PÁGINA</a>
+            <li class="menu menu-patron">
+              <a href="#patron">PATRONO</a>
             </li>
   
-            <li class="menu">
-              <a href="Premios.html">PRÊMIOS</a>
+            <li class="menu menu-team">
+              <a href="#team">EQUIPE</a>
             </li>
   
           </ul>
         </nav>
   
-        <a href="https://google.com">
+        <a href="https://www.instagram.com/flamesports._/" target="_blank">
           <img class="image-instagram" src="../../Images/instagram.svg" alt="Instagram">
         </a>
       </div>
@@ -63,10 +65,10 @@
     </header>
 
     <main>
-      <section class="home">
+      <section id="home">
 
         <div id="title">
-          <h2 class="fadeInShort">| &nbsp APRESENTANDO &nbsp |</h2>
+          <h2 id="select-menu-home" class="fadeInShort select-menu">| &nbsp APRESENTANDO &nbsp |</h2>
           <h1 class="fadeInLong">FLAME SPORTS</h1>
         </div>
 
@@ -87,12 +89,82 @@
 
       </section>
 
-      <section class="about-us">
+      <section id="about-us">
         <div>
+          <h2 id="select-menu-about-us" class="select-menu title">Sobre nós</h2>
+          <hr>
+        </div>
+
+        <div class="who-are">
+          <p>
+            Somos o Flame Sports e estamos dentro de diversas modalidades esportivas, como o futebol,
+            o basquete e os e-sports. Além de tudo, somos a equipe vermelha; nossa cor significa poder e amor.
+          </p>
+        </div>
+        
+        <div class="empreend-div">
+          <div class="empreend" id="mission">
+            <h3><span>Inovar é a nossa</span> Missão - Flame Sports</h3>
+
+            <p>
+              Guiar nossos atletas a se esforçarem, dando o melhor de si em suas paixões, 
+              sem se sentirem" presos".
+            </p>
+          </div>
+
+          <div class="empreend" id="vision">
+            <h3><span>Nossa visão sobre os</span> Esportes e Jogos</h3>
+
+            <p>Tornar-nos o melhor clube esportivo do Brasil.</p>
+          </div>
+
+          <div class="empreend" id="value">
+            <h3><span>Nossos principais valores sobre</span> a equipe</h3>
+
+            <ul>
+              <li>Comprometimento</li>
+              <li>Inovação</li>
+              <li>Superação de resultados</li>
+              <li>Companherismo</li>
+              <li>Liderança</li>
+              <li>Pensamento coletivo</li>
+            </ul>
+          </div>
         </div>
       </section>
+
+      <section id="patron">       
+        <h2 id="select-menu-patron" class="select-menu title">PATRONO</h2>
+        
+        <div>
+          <div class="container-patron">
+            <img class="img-patron" src="../../Images/Philip.png" alt="Philip Noel-Baker">
+                
+            <div>
+              <div class="name-patron">
+                  <h3>Philip Noel-Baker</h3>
+      
+                  <span>Atleta</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-patron">
+          <p>
+                  Foi o único atleta olímpico com medalha a receber um Prêmio Nobel em toda a história. 
+                  Recebeu o Prêmio Nobel da Paz pela economia em 1959 em reconhecimento ao seu trabalho pela paz, 
+                  desarmamento e por ajudar os refugiados da guerra. Seu empenho e dedicação em 
+                  diferentes áreas (política e atlética) nos inspira e nos motiva a darmos tudo 
+                  de nós em cada área esportiva.
+          </p>
+        </div>
+      </section>
+
+
     </main>
 
   </body>
 
 </html>
+
+<script src="../JS/SelectMenu.js"></script>

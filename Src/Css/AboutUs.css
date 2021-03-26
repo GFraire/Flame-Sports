@@ -1,4 +1,126 @@
-.about-us {
+#about-us {
   background-color: #F2F3F5;
-  height: 20rem;
+  height: 100%;
+}
+
+#about-us > div:first-child {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+#about-us hr {
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  transform: translateX(50%);
+
+  border-top: 2px solid #D7D8DA;
+  width: 20%;
+}
+
+#about-us .who-are {
+  width: 70%;
+  margin: 2.5rem auto;
+}
+
+#about-us .who-are p {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+#about-us .empreend-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  width: 70%;
+
+  margin: auto;
+}
+
+#about-us .empreend {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 4rem;
+}
+
+#about-us h3 {
+  color: #000000;
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+}
+
+#about-us span {
+  color: #4A4A4A;
+  font-weight: 300;
+}
+
+#about-us p, #about-us li {
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #000000;
+  font-weight: 300;
+}
+
+#about-us li {
+  list-style: circle;
+  font-size: 1.3rem;
+}
+
+#about-us ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 1.7rem;
+}
+
+#about-us #mission {
+  margin-bottom: 12rem;
+}
+
+#about-us #value {
+  position: absolute;
+  top: 30%;
+  right: 0%;
+  transform: translateX(20%);
+
+  width: 55%;
+}
+
+@media(max-width: 1580px) {
+  #about-us p, #about-us li {
+    font-size: 1.3rem;
+  }
+
+  #about-us #mission {
+    position: relative;
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  #about-us #vision {
+    position: relative;
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  #about-us #value {
+    position: relative;
+    width: 90%;
+    transform: translateX(0%);
+  }
+
+  #about-us li {
+    margin-left: 1.5rem;
+  }
+}
+
+@media(max-width: 880px) {
+  #about-us ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 1rem;
+  }
 }

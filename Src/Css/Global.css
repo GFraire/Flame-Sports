@@ -2,6 +2,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .fadeInLong {
   -webkit-animation: fadeIn 5s ease-in-out;
   -moz-animation: fadeIn 5s ease-in-out;
@@ -36,6 +40,20 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+h2.title {
+  color: #666666;
+  font-weight: 400;
+  font-size: 4rem;
+  text-align: center;
+  border-top: 1rem solid #960900;
+
+  width: 100%;
+
+  margin: 0;
+  margin-bottom: 5rem;
+  padding-top: 4rem;
 }
 
 @media(max-width: 1580px){

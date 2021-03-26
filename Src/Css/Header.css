@@ -1,10 +1,15 @@
 header {
+  position: fixed;
+  top: 0%;
+  
   display: flex;
   align-items: center;
 
-  position: fixed;
   width: 100%;
-  background-color: #424d525b;
+  background-color: #960900;
+  z-index: 10;
+
+  visibility: hidden;
 }
 
 .header {
@@ -63,13 +68,13 @@ header nav img {
 
 .selected a {
   border: #e4d6d6 solid 2px;
-  transition: .5s;
+  transition: background-color .5s;
 
 }
 
 .selected a:hover {
   background-color: #000000;
-  transition: .5s;
+  transition: background-color .5s;
 }
 
 .menu-interface-div {
